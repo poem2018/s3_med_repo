@@ -11,5 +11,7 @@
 
 # running command
 bash scripts/baseline_s3_med/host_llm_3b.sh
+
 bash scripts/deploy_retriever/retrieval_launch.sh
+
 bash scripts/baseline_s3_med/run_all_baselines.sh
