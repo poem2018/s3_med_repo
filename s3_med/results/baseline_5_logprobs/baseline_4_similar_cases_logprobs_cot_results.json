@@ -1,0 +1,2119 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "method": "similar_cases_logprobs",
+  "prompt_type": "cot",
+  "k_similar": 3,
+  "num_patients": 300,
+  "num_failed": 0,
+  "metrics": {
+    "accuracy": 0.63,
+    "precision": 0.14035087719298245,
+    "recall": 0.5517241379310345,
+    "f1": 0.22377622377622378,
+    "auc": 0.6287695635577046,
+    "auprc": 0.1591362950809119
+  },
+  "predictions": [
+    {
+      "patient_id": "10006053_1",
+      "true_label": 1,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10011668_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.6966004666584145,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10015625_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10017882_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10020187_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10020187_2",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10029874_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.9236848741700819,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10030566_1",
+      "true_label": 1,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10031404_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10032176_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10037483_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10037928_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10037928_2",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.07631405652994475,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10037928_3",
+      "true_label": 1,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10038081_1",
+      "true_label": 1,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10038999_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10039831_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10040025_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.1594483634440846,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10040721_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.9236859434700553,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10041790_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.07631512582991813,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10046166_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10055235_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10063488_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.1594483634440846,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10065641_1",
+      "true_label": 1,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10067921_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10068474_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10068474_2",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10068474_3",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10072153_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.5,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10075035_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10075900_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.1594483634440846,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10076506_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10085683_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10094629_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10101615_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10104308_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10104308_2",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10104308_3",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10104308_4",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10104308_5",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10109956_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10112163_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10120959_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10125047_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.5,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10135376_1",
+      "true_label": 1,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10137553_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.6966036915672048,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10138124_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10140738_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10141364_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.9236848741700819,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10141364_2",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.8405516365559155,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10141911_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10142207_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.6966004666584145,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10143015_1",
+      "true_label": 1,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10152038_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10152275_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10152525_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10164665_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.6966004666584145,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10169034_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10172862_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10173425_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10177544_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10182949_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.9236859434700553,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10192358_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10192402_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10192651_1",
+      "true_label": 1,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10196711_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.6966004666584145,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10197727_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.1594483634440846,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10202010_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10202580_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10202580_2",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10208884_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.3033963084327952,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10215469_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10218413_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10221634_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.3033995333415856,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10221634_2",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10221634_3",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.5,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10232455_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.07631405652994475,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10233597_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10236326_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.8405516365559155,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10240564_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.5,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10240625_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.5,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10246901_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10246901_2",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10250159_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.5,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10250159_2",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.3033963084327952,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10252795_1",
+      "true_label": 1,
+      "prediction": 1,
+      "confidence": 0.8405516365559155,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10255052_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.9236859434700553,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10255303_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10263247_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10265482_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.6966036915672048,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10265482_2",
+      "true_label": 1,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10266364_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10270064_1",
+      "true_label": 1,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10275318_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.07631512582991813,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10275551_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10278142_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10279161_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10286072_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.8405516365559155,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10288034_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10288279_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10288279_2",
+      "true_label": 1,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10292388_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10302724_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.9236859434700553,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10318302_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.3033995333415856,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10323532_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.5,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10326564_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.1594483634440846,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10331864_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10334880_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.5,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10338535_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.07631512582991813,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10338535_2",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10340850_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.5,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10344852_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.5,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10347400_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10347400_2",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10347400_3",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10348445_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10354217_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.3033995333415856,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10354217_2",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10356145_1",
+      "true_label": 1,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10357013_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.5,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10358529_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.1594483634440846,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10370185_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10371956_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.5,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10374847_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.5,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10377643_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.1594483634440846,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10380058_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10383045_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10383860_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10383860_2",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10383890_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10384441_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10386925_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10386925_2",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.6966036915672048,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10388041_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10390828_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.07631512582991813,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10390828_2",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10391698_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10398173_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.3033963084327952,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10398928_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10402372_1",
+      "true_label": 1,
+      "prediction": 0,
+      "confidence": 0.07631405652994475,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10402762_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.6966036915672048,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10405463_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10405463_2",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10407740_1",
+      "true_label": 1,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10415581_1",
+      "true_label": 1,
+      "prediction": 0,
+      "confidence": 0.1594483634440846,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10421083_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10423496_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.1594483634440846,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10424018_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10424595_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10428217_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.6966036915672048,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10430776_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10435008_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10439484_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10439484_2",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.1594483634440846,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10443410_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10446803_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10449660_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.6966004666584145,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10449660_2",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10455192_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.6966004666584145,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10455192_2",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.8405516365559155,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10456432_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.07631512582991813,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10456513_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10457524_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.07631405652994475,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10459538_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10461672_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10463621_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10464896_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.9236859434700553,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10465299_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10469621_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10469621_2",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.5,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10469621_3",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10469621_4",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10469621_5",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10469621_6",
+      "true_label": 1,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10470189_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10471837_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10475398_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10475398_2",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10479937_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.8405516365559155,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10480050_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.1594483634440846,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10483570_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.07631512582991813,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10487263_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10493113_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10501162_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10501909_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10503308_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10505233_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.8405516365559155,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10516440_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10519108_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10519108_2",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10519108_3",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10523436_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10525033_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.5,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10525752_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10534858_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.3033963084327952,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10543355_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10544005_1",
+      "true_label": 1,
+      "prediction": 1,
+      "confidence": 0.9236859434700553,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10546885_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10552083_1",
+      "true_label": 1,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10557919_1",
+      "true_label": 1,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10558262_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10563695_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10564547_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10564547_2",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10564547_3",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10564547_4",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10570126_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.8405516365559155,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10576073_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10576313_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10576313_2",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10578665_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.8405516365559155,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10579140_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10585182_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.1594483634440846,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10585182_2",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10585182_3",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.6966004666584145,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10585182_4",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.5,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10585182_5",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10585182_6",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.1594483634440846,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10590984_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10599715_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.1594483634440846,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10599715_2",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.3033995333415856,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10599715_3",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.3033963084327952,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10600153_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10602633_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10606807_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10608343_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10614662_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10614830_1",
+      "true_label": 1,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10616285_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10618469_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.9236848741700819,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10620406_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10621224_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10625032_1",
+      "true_label": 1,
+      "prediction": 0,
+      "confidence": 0.3033995333415856,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10625972_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.8405516365559155,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10625972_2",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10631043_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.5,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10634768_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.07631512582991813,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10635574_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10636625_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10637718_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10641579_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10643286_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10643286_2",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10651616_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10651616_2",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.6966036915672048,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10655422_1",
+      "true_label": 1,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10667263_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10669482_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10669660_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.8405516365559155,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10670524_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10670524_2",
+      "true_label": 1,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10671800_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10674696_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.1594483634440846,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10686932_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.07631512582991813,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10691112_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.9236859434700553,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10692860_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10696809_1",
+      "true_label": 1,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10698799_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.5,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10706853_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10710291_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10711408_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10711408_2",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10711408_3",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10711408_4",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.1594483634440846,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10711408_5",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10716890_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10719983_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10740435_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.9236859434700553,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10740516_1",
+      "true_label": 1,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10740871_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.07631512582991813,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10749008_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10749008_2",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.9236848741700819,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10750422_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10751147_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10751188_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.07631512582991813,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10755584_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10759132_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10772100_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.8405516365559155,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10772100_2",
+      "true_label": 1,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10774318_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10780631_1",
+      "true_label": 1,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10781156_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10781156_2",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10784532_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10785290_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.6966004666584145,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10786807_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10788820_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.5,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10790822_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 0.8405516365559155,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10797767_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10803096_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10803137_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10813632_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.07631512582991813,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10815532_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10816667_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10820164_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10820469_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.07631512582991813,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10821446_1",
+      "true_label": 1,
+      "prediction": 0,
+      "confidence": 0.1594483634440846,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10824755_1",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.0,
+      "response": "Final Answer: LOW"
+    },
+    {
+      "patient_id": "10834547_1",
+      "true_label": 0,
+      "prediction": 1,
+      "confidence": 1.0,
+      "response": "Final Answer: HIGH"
+    },
+    {
+      "patient_id": "10834547_2",
+      "true_label": 0,
+      "prediction": 0,
+      "confidence": 0.5,
+      "response": "Final Answer: LOW"
+    }
+  ],
+  "failed_patients": []
+}
