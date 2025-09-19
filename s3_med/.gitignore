@@ -1,0 +1,15 @@
+
+# ignore large raw-data dirs
+corpus/
+data/
+outputs/
+
+# ignore large json files
+patient_matrices_optimized/patient_info.json
+patient_matrices_optimized/patient_info_enriched.json
+patient_matrices_optimized/patient_matrices.json
+data/
+corpus/
+images/
+outputs/
+output/

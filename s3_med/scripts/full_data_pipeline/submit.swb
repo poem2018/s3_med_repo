@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#SBATCH --job-name="generate_matrix"
+#SBATCH --output="slurm_logs/generate_matrix.%j.out"
+#SBATCH --error="slurm_logs/generate_matrix.%j.err"
+#SBATCH --mem=40g
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=32
+#SBATCH --partition=gpuA100x4    # <- or one of: gpuA100x4 gpuA40x4 gpuA100x8 gpuMI100x8
+#SBATCH --account=bcew-delta-gpu
+#SBATCH --time=8:00:00
+#SBATCH --gpus-per-node=1
+#SBATCH --gpu-bind=closest
+
+source ~/.bashrc
+conda activate s3
+bash run_patient_split_pipeline.sh
+# python scripts/create_patient_matrices_optimized.py  

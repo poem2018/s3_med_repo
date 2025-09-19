@@ -1,0 +1,27 @@
+前置准备：
+
+  1. 启动LLM服务器（baseline 2-4需要）：
+  bash scripts/baseline_s3_med/host_llm_3b.sh
+
+  2. 启动检索服务器（baseline 3-4需要）：
+  bash scripts/deploy_retriever/retrieval_launch.sh
+
+  运行各个baseline：
+
+  Baseline 1 - 传统机器学习分类：
+  python scripts/baseline_s3_med/baseline_1_ml_classification.py \
+      --data_dir /scratch/bcew/ruikez2/intern/s3_med/data/baseline_text_500 \
+      --output_dir results/baseline_1
+
+  Baseline 2 - 直接LLM预测：
+  python scripts/baseline_s3_med/baseline_2_direct_llm.py \
+      --data_dir /scratch/bcew/ruikez2/intern/s3_med/data/baseline_text_500 \
+      --output_dir results/baseline_2 \
+      --batch_delay 0.2
+  
+  
+  Baseline 3 - 朴素RAG+LLM：
+  python scripts/baseline_s3_med/baseline_3_naive_rag.py   --data_dir /scratch/bcew/ruikez2/intern/s3_med/data/baseline_text_500   --output_dir results/baseline_3
+
+  Baseline 4 - 相似病例+RAG+LLM：
+  python scripts/baseline_s3_med/baseline_4_similar_cases_rag.py  --data_dir /scratch/bcew/ruikez2/intern/s3_med/data/baseline_text_500 --output_dir results/baseline_4

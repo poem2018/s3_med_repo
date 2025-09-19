@@ -1,0 +1,87 @@
+# Data and output directories
+s3_med/data/
+s3_med/corpus/
+s3_med/images/
+s3_med/outputs/
+s3_med/output/
+s3_med/results/
+
+# Large data files
+*.json
+*.csv
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.parquet
+
+# Model files
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Logs
+*.log
+logs/
+*.out
+*.err
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Compressed files
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+
+# Documentation builds
+docs/_build/
+dist/
+build/
+*.egg-info/

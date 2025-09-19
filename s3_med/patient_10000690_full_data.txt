@@ -1,0 +1,30 @@
+================================================================================
+COMPLETE DATA EXTRACTION FOR PATIENT: 10000690_37081114
+================================================================================
+
+1. ICU VISITS INFORMATION:
+------------------------------------------------------------
+Total ICU visits for subject 10000690: 1
+
+Visit 1:
+  Hospital Admission ID: 25860671
+  ICU Stay ID: 37081114
+  In time: 2150-11-02 19:37:00
+  Out time: 2150-11-06 17:03:17
+  Length of stay: 3.8932523148148146 days
+
+Current stay (37081114) admission: 2150-11-02 19:37:00
+
+
+2. ALL LAB EVENTS:
+------------------------------------------------------------
+Traceback (most recent call last):
+  File "/scratch/bcew/ruikez2/extract_patient_full_data.py", line 69, in <module>
+    for line in f:
+  File "/u/ruikez2/miniconda3/envs/ret/lib/python3.10/gzip.py", line 314, in read1
+    return self._buffer.read1(size)
+  File "/u/ruikez2/miniconda3/envs/ret/lib/python3.10/_compression.py", line 68, in readinto
+    data = self.read(len(byte_view))
+  File "/u/ruikez2/miniconda3/envs/ret/lib/python3.10/gzip.py", line 496, in read
+    uncompress = self._decompressor.decompress(buf, size)
+KeyboardInterrupt

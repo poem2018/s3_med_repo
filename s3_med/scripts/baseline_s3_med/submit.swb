@@ -1,0 +1,23 @@
+#!/bin/bash
+
+#SBATCH --job-name="sgenerate_matrix"
+#SBATCH --output="slurm_logs/sgenerate_matrix.%j.out"
+#SBATCH --error="slurm_logs/sgenerate_matrix.%j.err"
+#SBATCH --mem=40g
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=32
+#SBATCH --partition=gpuA100x4    # <- or one of: gpuA100x4 gpuA40x4 gpuA100x8 gpuMI100x8
+#SBATCH --account=bcew-delta-gpu
+#SBATCH --time=24:00:00
+#SBATCH --gpus-per-node=1
+#SBATCH --gpu-bind=closest
+
+source ~/.bashrc
+conda activate s3
+bash scripts/baseline_s3_med/host_llm_3b.sh
+bash scripts/deploy_retriever/retrieval_launch.sh
+# python scripts/baseline_s3_med/baseline_3_naive_rag.py  --data_dir /scratch/bcew/ruikez2/intern/s3_med/data/baseline_text_500 --output_dir results/baseline_3   --topk 5   --max_retries 3
+
+# python scripts/baseline_s3_med/baseline_4_similar_cases_rag.py  --data_dir /scratch/bcew/ruikez2/intern/s3_med/data/baseline_text_500 --output_dir results/baseline_4  --topk 5
+# bash ./scripts/baseline_s3_med/run_all_baselines.sh 300 >  ./scripts/baseline_s3_med/output.log  2>&1

@@ -1,0 +1,70 @@
+#!/bin/bash
+
+#SBATCH --job-name="train_mimic_s3"
+#SBATCH --output="slurm_logs/train_mimic.%j.out"
+#SBATCH --error="slurm_logs/train_mimic.%j.err"
+#SBATCH --mem=160g
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=32
+#SBATCH --partition=gpuA100x4    # <- or one of: gpuA100x4 gpuA40x4 gpuA100x8 gpuMI100x8
+#SBATCH --account=bcew-delta-gpu
+#SBATCH --time=48:00:00
+#SBATCH --gpus-per-node=4
+#SBATCH --gpu-bind=closest
+
+source ~/.bashrc
+conda activate ret
+
+# Create necessary directories
+mkdir -p slurm_logs
+mkdir -p train_logs
+
+echo "Job started at $(date)"
+echo "Running on node: $(hostname)"
+
+# Start retrieval server in background
+echo "Starting retrieval server..."
+cd /scratch/bcew/ruikez2/intern/s3_med
+bash scripts/deploy_retriever/retrieval_launch.sh &
+RETRIEVAL_PID=$!
+
+# Wait for retrieval server to initialize
+echo "Waiting for retrieval server to start..."
+sleep 30
+
+# Check if retrieval server is running
+if ! ps -p $RETRIEVAL_PID > /dev/null; then
+    echo "Retrieval server failed to start!"
+    exit 1
+fi
+
+# Optional: Test retrieval endpoint
+echo "Testing retrieval server..."
+for i in {1..10}; do
+    if curl -s -X POST http://127.0.0.1:3000/retrieve \
+        -H "Content-Type: application/json" \
+        -d '{"query": "test", "k": 1}' 2>/dev/null | grep -q "results"; then
+        echo "Retrieval server is ready!"
+        break
+    fi
+    echo "Attempt $i: Waiting for retrieval server..."
+    sleep 5
+done
+
+# Run training
+echo "Starting training..."
+cd /scratch/bcew/ruikez2/intern/s3_med
+bash scripts/train/train_mimic.sh ${1:-42}
+
+# Capture training exit code
+TRAIN_EXIT_CODE=$?
+
+# Clean up: kill retrieval server
+echo "Stopping retrieval server..."
+kill $RETRIEVAL_PID 2>/dev/null
+
+echo "Job completed at $(date)"
+echo "Training exit code: $TRAIN_EXIT_CODE"
+
+exit $TRAIN_EXIT_CODE
