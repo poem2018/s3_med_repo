@@ -72,112 +72,112 @@ else
     fi
 fi
 
-# # Run with direct prompting
-# python $SCRIPTS_DIR/baseline_2_direct_llm.py \
+# Run with direct prompting
+python $SCRIPTS_DIR/baseline_2_direct_llm.py \
+    --data_dir $DATA_DIR \
+    --output_dir $RESULTS_DIR/baseline_2 \
+    --prompt_type direct \
+    --temperature 0.3 \
+    $MAX_SAMPLES_ARGS
+
+# Run with chain-of-thought prompting
+python $SCRIPTS_DIR/baseline_2_direct_llm.py \
+    --data_dir $DATA_DIR \
+    --output_dir $RESULTS_DIR/baseline_2 \
+    --prompt_type cot \
+    --temperature 0.3 \
+    $MAX_SAMPLES_ARGS 
+
+ # Run with logprobs-based confidence
+echo "Running Baseline 2 with token probabilities..."
+python $SCRIPTS_DIR/baseline_2_logprobs.py \
+    --data_dir $DATA_DIR \
+    --output_dir $RESULTS_DIR/baseline_2_logprobs \
+    --prompt_type cot \
+    --temperature 0.3 \
+    $MAX_SAMPLES_ARGS
+
+echo "✓ Baseline 2 completed (direct, CoT, and logprobs)"
+echo ""
+# ============================================
+# Baseline 3: Naive RAG + LLM
+# ============================================
+echo "========================================="
+echo "[3/4] Running Baseline 3: Naive RAG + LLM"
+echo "========================================="
+
+# Check if retrieval server is running
+echo "Checking retrieval server at $RETRIEVAL_ENDPOINT..."
+if curl -s $RETRIEVAL_ENDPOINT > /dev/null 2>&1; then
+    echo "✓ Retrieval server is running"
+else
+    echo "⚠ Warning: Retrieval server may not be running at $RETRIEVAL_ENDPOINT"
+    echo "Please ensure the medical knowledge retrieval server is running"
+    echo "You can start it with: bash ./scripts/deploy_retriever/retrieval_launch.sh"
+    read -p "Continue anyway? (y/n) " -n 1 -r
+    echo
+    if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+        exit 1
+    fi
+fi
+
+# python $SCRIPTS_DIR/baseline_3_naive_rag.py \
 #     --data_dir $DATA_DIR \
-#     --output_dir $RESULTS_DIR/baseline_2 \
-#     --prompt_type direct \
-#     --temperature 0.3 \
-#     $MAX_SAMPLES_ARGS
-
-# # Run with chain-of-thought prompting
-# python $SCRIPTS_DIR/baseline_2_direct_llm.py \
-#     --data_dir $DATA_DIR \
-#     --output_dir $RESULTS_DIR/baseline_2 \
-#     --prompt_type cot \
-#     --temperature 0.3 \
-#     $MAX_SAMPLES_ARGS 
-
-#  # Run with logprobs-based confidence
-# echo "Running Baseline 2 with token probabilities..."
-# python $SCRIPTS_DIR/baseline_2_logprobs.py \
-#     --data_dir $DATA_DIR \
-#     --output_dir $RESULTS_DIR/baseline_2_logprobs \
-#     --prompt_type cot \
-#     --temperature 0.3 \
-#     $MAX_SAMPLES_ARGS
-
-# echo "✓ Baseline 2 completed (direct, CoT, and logprobs)"
-# echo ""
-# # ============================================
-# # Baseline 3: Naive RAG + LLM
-# # ============================================
-# echo "========================================="
-# echo "[3/4] Running Baseline 3: Naive RAG + LLM"
-# echo "========================================="
-
-# # Check if retrieval server is running
-# echo "Checking retrieval server at $RETRIEVAL_ENDPOINT..."
-# if curl -s $RETRIEVAL_ENDPOINT > /dev/null 2>&1; then
-#     echo "✓ Retrieval server is running"
-# else
-#     echo "⚠ Warning: Retrieval server may not be running at $RETRIEVAL_ENDPOINT"
-#     echo "Please ensure the medical knowledge retrieval server is running"
-#     echo "You can start it with: bash ./scripts/deploy_retriever/retrieval_launch.sh"
-#     read -p "Continue anyway? (y/n) " -n 1 -r
-#     echo
-#     if [[ ! $REPLY =~ ^[Yy]$ ]]; then
-#         exit 1
-#     fi
-# fi
-
-# # python $SCRIPTS_DIR/baseline_3_naive_rag.py \
-# #     --data_dir $DATA_DIR \
-# #     --output_dir $RESULTS_DIR/baseline_3 \
-# #     --retrieval_endpoint $RETRIEVAL_ENDPOINT \
-# #     --topk 5 \
-# #     --temperature 0.3 \
-# #     $MAX_SAMPLES_ARGS
-
-# # echo "✓ Baseline 3 completed"
-
-# # Run with logprobs-based confidence
-# echo "Running Baseline 3 with token probabilities..."
-# python $SCRIPTS_DIR/baseline_3_logprobs.py \
-#     --data_dir $DATA_DIR \
-#     --output_dir $RESULTS_DIR/baseline_3_logprobs \
+#     --output_dir $RESULTS_DIR/baseline_3 \
 #     --retrieval_endpoint $RETRIEVAL_ENDPOINT \
-#     --prompt_type cot \
 #     --topk 5 \
 #     --temperature 0.3 \
-#     --debug \
 #     $MAX_SAMPLES_ARGS
 
-# echo "✓ Baseline 3 completed (standard and logprobs)"
-# echo ""
+# echo "✓ Baseline 3 completed"
 
-# # ============================================
-# # Baseline 4: Similar Cases + RAG + LLM
-# # ============================================
-# echo "========================================="
-# echo "[4/5] Running Baseline 4: Similar Cases + RAG + LLM"
-# echo "========================================="
+# Run with logprobs-based confidence
+echo "Running Baseline 3 with token probabilities..."
+python $SCRIPTS_DIR/baseline_3_logprobs.py \
+    --data_dir $DATA_DIR \
+    --output_dir $RESULTS_DIR/baseline_3_logprobs \
+    --retrieval_endpoint $RETRIEVAL_ENDPOINT \
+    --prompt_type cot \
+    --topk 5 \
+    --temperature 0.3 \
+    --debug \
+    $MAX_SAMPLES_ARGS
 
-# # python $SCRIPTS_DIR/baseline_4_similar_cases_rag.py \
-# #     --data_dir $DATA_DIR \
-# #     --output_dir $RESULTS_DIR/baseline_4 \
-# #     --retrieval_endpoint $RETRIEVAL_ENDPOINT \
-# #     --k_similar 3 \
-# #     --topk_docs 3 \
-# #     --temperature 0.3 \
-# #     $MAX_SAMPLES_ARGS
+echo "✓ Baseline 3 completed (standard and logprobs)"
+echo ""
 
-# # echo "✓ Baseline 4 completed"
+# ============================================
+# Baseline 4: Similar Cases + RAG + LLM
+# ============================================
+echo "========================================="
+echo "[4/5] Running Baseline 4: Similar Cases + RAG + LLM"
+echo "========================================="
 
-# # Run with logprobs-based confidence
-# echo "Running Baseline 4 with token probabilities..."
-# python $SCRIPTS_DIR/baseline_4_logprobs.py \
+# python $SCRIPTS_DIR/baseline_4_similar_cases_rag.py \
 #     --data_dir $DATA_DIR \
-#     --output_dir $RESULTS_DIR/baseline_4_logprobs \
+#     --output_dir $RESULTS_DIR/baseline_4 \
 #     --retrieval_endpoint $RETRIEVAL_ENDPOINT \
-#     --prompt_type cot \
 #     --k_similar 3 \
 #     --topk_docs 3 \
 #     --temperature 0.3 \
 #     $MAX_SAMPLES_ARGS
 
-# echo "✓ Baseline 4 completed (standard and logprobs)"
-# echo ""
+# echo "✓ Baseline 4 completed"
+
+# Run with logprobs-based confidence
+echo "Running Baseline 4 with token probabilities..."
+python $SCRIPTS_DIR/baseline_4_logprobs.py \
+    --data_dir $DATA_DIR \
+    --output_dir $RESULTS_DIR/baseline_4_logprobs \
+    --retrieval_endpoint $RETRIEVAL_ENDPOINT \
+    --prompt_type cot \
+    --k_similar 3 \
+    --topk_docs 3 \
+    --temperature 0.3 \
+    $MAX_SAMPLES_ARGS
+
+echo "✓ Baseline 4 completed (standard and logprobs)"
+echo ""
 
 # ============================================
 # Baseline 5: Similar Cases Only (No RAG)
