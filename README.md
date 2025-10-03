@@ -2,12 +2,15 @@
 
 # Medical Reasoning Results - Qwen2.5-3B-Instruct (logprobs score)
 
-| Method | Prompt Type | Additional Parameters | Num Patients | Num Failed | Accuracy | Precision | Recall | F1 | AUC | AUPRC |
-|--------|-------------|----------------------|--------------|------------|----------|-----------|--------|----|----- |-------|
-| direct input | cot | - | 300 | 6 | 0.18 | 0.0996 | 0.9310 | 0.18 | 0.5187 | 0.1001 |
-| with rag | cot | topk_docs: 5 | 300 | 0 | 0.1833 | 0.1029 | 0.9655 | 0.1860 | 0.5340 | 0.1034 |
-| similar_cases + rag | cot | k_similar: 3, topk_docs: 3 | 300 | 0 | 0.18 | 0.0967 | 0.8966 | 0.1745 | 0.5709 | 0.1135 |
-| similar_cases | cot | k_similar: 3 | 300 | 0 | 0.63 | 0.1404 | 0.5517 | 0.2238 | 0.6288 | 0.1591 |
+
+| Model | Acc | Prec | Rec | F1 | AUC | AUPRC |
+|-------|-----|------|-----|----|----- |-------|
+| Baseline 1: Random Forest | 0.907 | 0.545 | 0.316 | 0.400 | 0.907 | 0.456 |
+| Baseline 1: Logistic Regression | 0.825 | 0.317 | 0.684 | 0.433 | 0.874 | 0.514 |
+| Baseline 2: Direct Input + CoT + Logprobs | 0.180 | 0.100 | 0.931 | 0.180 | 0.519 | 0.100 |
+| Baseline 3: RAG + CoT + Logprobs | 0.183 | 0.103 | 0.966 | 0.186 | 0.534 | 0.103 |
+| Baseline 4: Similar Cases + RAG + CoT | 0.180 | 0.097 | 0.897 | 0.175 | 0.571 | 0.114 |
+| Baseline 5: Similar Cases + CoT | 0.627 | 0.140 | 0.552 | 0.223 | 0.608 | 0.139 |
 
 # running command
 bash scripts/baseline_s3_med/host_llm_3b.sh
